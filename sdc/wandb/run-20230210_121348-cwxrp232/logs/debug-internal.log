@@ -1,0 +1,112 @@
+2023-02-10 12:13:48,729 INFO    StreamThr :109598 [internal.py:wandb_internal():87] W&B internal server running at pid: 109598, started at: 2023-02-10 12:13:48.728501
+2023-02-10 12:13:48,732 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status
+2023-02-10 12:13:48,736 INFO    WriterThread:109598 [datastore.py:open_for_write():85] open: ./wandb/run-20230210_121348-cwxrp232/run-cwxrp232.wandb
+2023-02-10 12:13:48,739 DEBUG   SenderThread:109598 [sender.py:send():334] send: header
+2023-02-10 12:13:48,739 DEBUG   SenderThread:109598 [sender.py:send():334] send: run
+2023-02-10 12:13:49,351 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: check_version
+2023-02-10 12:13:49,354 INFO    SenderThread:109598 [dir_watcher.py:__init__():216] watching files in: ./wandb/run-20230210_121348-cwxrp232/files
+2023-02-10 12:13:49,355 INFO    SenderThread:109598 [sender.py:_start_run_threads():1065] run started: cwxrp232 with start time 1676020428.727982
+2023-02-10 12:13:49,355 DEBUG   SenderThread:109598 [sender.py:send_request():361] send_request: summary_record
+2023-02-10 12:13:49,355 INFO    SenderThread:109598 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-10 12:13:49,356 DEBUG   SenderThread:109598 [sender.py:send_request():361] send_request: check_version
+2023-02-10 12:13:49,618 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: run_start
+2023-02-10 12:13:49,634 DEBUG   HandlerThread:109598 [system_info.py:__init__():31] System info init
+2023-02-10 12:13:49,634 DEBUG   HandlerThread:109598 [system_info.py:__init__():46] System info init done
+2023-02-10 12:13:49,634 INFO    HandlerThread:109598 [system_monitor.py:start():151] Starting system monitor
+2023-02-10 12:13:49,634 INFO    SystemMonitor:109598 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-10 12:13:49,635 INFO    HandlerThread:109598 [system_monitor.py:probe():172] Collecting system info
+2023-02-10 12:13:49,635 INFO    SystemMonitor:109598 [interfaces.py:start():168] Started cpu
+2023-02-10 12:13:49,636 INFO    SystemMonitor:109598 [interfaces.py:start():168] Started disk
+2023-02-10 12:13:49,637 INFO    SystemMonitor:109598 [interfaces.py:start():168] Started gpu
+2023-02-10 12:13:49,639 INFO    SystemMonitor:109598 [interfaces.py:start():168] Started memory
+2023-02-10 12:13:49,639 INFO    SystemMonitor:109598 [interfaces.py:start():168] Started network
+2023-02-10 12:13:49,714 DEBUG   HandlerThread:109598 [system_info.py:probe():195] Probing system
+2023-02-10 12:13:49,728 DEBUG   HandlerThread:109598 [git.py:repo():40] git repository is invalid
+2023-02-10 12:13:49,729 DEBUG   HandlerThread:109598 [system_info.py:probe():241] Probing system done
+2023-02-10 12:13:49,729 DEBUG   HandlerThread:109598 [system_monitor.py:probe():181] {'os': 'Linux-5.14.0-1054-oem-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2023-02-10T09:13:49.714610', 'startedAt': '2023-02-10T09:13:48.708331', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py', 'codePath': 'run.py', 'host': 'techtoker', 'username': 'techtoker', 'executable': '/home/techtoker/tools/anaconda3/envs/yandex_sdc/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 3196.82195, 'min': 1200.0, 'max': 4120.0}, 'cpu_freq_per_core': [{'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.002, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}], 'disk': {'total': 2014.2841339111328, 'used': 1657.9023513793945}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 62.546348571777344}}
+2023-02-10 12:13:49,729 INFO    HandlerThread:109598 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-10 12:13:49,729 INFO    HandlerThread:109598 [system_monitor.py:probe():185] Publishing system info
+2023-02-10 12:13:49,729 DEBUG   HandlerThread:109598 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-10 12:13:49,730 DEBUG   HandlerThread:109598 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-10 12:13:49,730 DEBUG   HandlerThread:109598 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-02-10 12:13:50,358 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_121348-cwxrp232/files/conda-environment.yaml
+2023-02-10 12:13:50,359 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_121348-cwxrp232/files/requirements.txt
+2023-02-10 12:13:50,359 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_121348-cwxrp232/files/wandb-summary.json
+2023-02-10 12:13:51,343 DEBUG   HandlerThread:109598 [system_info.py:_save_conda():86] Saving conda packages done
+2023-02-10 12:13:51,344 INFO    HandlerThread:109598 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-10 12:13:51,361 DEBUG   SenderThread:109598 [sender.py:send():334] send: files
+2023-02-10 12:13:51,361 INFO    SenderThread:109598 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-02-10 12:13:51,363 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/conda-environment.yaml
+2023-02-10 12:13:51,363 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_121348-cwxrp232/files/wandb-metadata.json
+2023-02-10 12:13:51,370 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-10 12:13:51,371 DEBUG   SenderThread:109598 [sender.py:send_request():361] send_request: stop_status
+2023-02-10 12:13:51,656 DEBUG   SenderThread:109598 [sender.py:send():334] send: telemetry
+2023-02-10 12:13:51,656 DEBUG   SenderThread:109598 [sender.py:send():334] send: config
+2023-02-10 12:13:51,662 DEBUG   SenderThread:109598 [sender.py:send():334] send: telemetry
+2023-02-10 12:13:52,088 INFO    Thread-16 :109598 [upload_job.py:push():143] Uploaded file /tmp/tmploaq6x71wandb/soxftx6m-wandb-metadata.json
+2023-02-10 12:13:52,363 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:13:54,364 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:13:54,374 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:13:56,365 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:13:59,719 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:14:00,367 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:02,368 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:04,369 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:05,469 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:14:06,370 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:06,370 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:06,371 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:08,371 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:10,372 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:11,371 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:11,381 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:14:12,374 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:14,374 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:16,372 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:16,375 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:17,130 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:14:18,376 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:20,377 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:21,373 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:22,378 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:22,946 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:14:23,379 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/config.yaml
+2023-02-10 12:14:24,379 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:26,374 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:26,380 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:28,381 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:28,856 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:14:30,382 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:31,375 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:32,383 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:34,384 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:34,749 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:14:36,376 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:36,385 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:38,386 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:40,387 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:40,573 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:14:41,378 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:42,388 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:44,389 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:46,348 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:14:46,379 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:46,390 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:48,391 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:49,640 DEBUG   SystemMonitor:109598 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-10 12:14:49,643 DEBUG   SenderThread:109598 [sender.py:send():334] send: stats
+2023-02-10 12:14:50,392 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:51,380 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:52,117 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:14:52,393 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:54,394 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:56,382 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:14:56,395 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:14:57,586 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:14:58,396 INFO    Thread-13 :109598 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_121348-cwxrp232/files/output.log
+2023-02-10 12:15:02,604 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:15:07,606 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:15:12,607 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:15:17,608 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:15:19,645 DEBUG   SenderThread:109598 [sender.py:send():334] send: stats
+2023-02-10 12:15:22,647 DEBUG   HandlerThread:109598 [handler.py:handle_request():144] handle_request: status_report

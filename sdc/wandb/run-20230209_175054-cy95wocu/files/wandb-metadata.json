@@ -1,0 +1,143 @@
+{
+    "os": "Linux-5.14.0-1054-oem-x86_64-with-glibc2.17",
+    "python": "3.8.16",
+    "heartbeatAt": "2023-02-09T14:50:55.617342",
+    "startedAt": "2023-02-09T14:50:54.372196",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py",
+    "codePath": "run.py",
+    "host": "techtoker",
+    "username": "techtoker",
+    "executable": "/home/techtoker/tools/anaconda3/envs/yandex_sdc/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 3196.5641499999997,
+        "min": 1200.0,
+        "max": 4120.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.007,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        }
+    ],
+    "disk": {
+        "total": 2014.2841339111328,
+        "used": 1657.827808380127
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 62.546348571777344
+    }
+}

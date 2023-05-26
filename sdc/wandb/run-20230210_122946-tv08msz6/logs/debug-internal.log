@@ -1,0 +1,416 @@
+2023-02-10 12:29:46,399 INFO    StreamThr :111701 [internal.py:wandb_internal():87] W&B internal server running at pid: 111701, started at: 2023-02-10 12:29:46.398815
+2023-02-10 12:29:46,403 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status
+2023-02-10 12:29:46,408 INFO    WriterThread:111701 [datastore.py:open_for_write():85] open: ./wandb/run-20230210_122946-tv08msz6/run-tv08msz6.wandb
+2023-02-10 12:29:46,410 DEBUG   SenderThread:111701 [sender.py:send():334] send: header
+2023-02-10 12:29:46,410 DEBUG   SenderThread:111701 [sender.py:send():334] send: run
+2023-02-10 12:29:47,032 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: check_version
+2023-02-10 12:29:47,035 INFO    SenderThread:111701 [dir_watcher.py:__init__():216] watching files in: ./wandb/run-20230210_122946-tv08msz6/files
+2023-02-10 12:29:47,036 INFO    SenderThread:111701 [sender.py:_start_run_threads():1065] run started: tv08msz6 with start time 1676021386.399106
+2023-02-10 12:29:47,036 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: summary_record
+2023-02-10 12:29:47,036 INFO    SenderThread:111701 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-10 12:29:47,037 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: check_version
+2023-02-10 12:29:47,300 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: run_start
+2023-02-10 12:29:47,317 DEBUG   HandlerThread:111701 [system_info.py:__init__():31] System info init
+2023-02-10 12:29:47,317 DEBUG   HandlerThread:111701 [system_info.py:__init__():46] System info init done
+2023-02-10 12:29:47,317 INFO    HandlerThread:111701 [system_monitor.py:start():151] Starting system monitor
+2023-02-10 12:29:47,318 INFO    SystemMonitor:111701 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-10 12:29:47,318 INFO    HandlerThread:111701 [system_monitor.py:probe():172] Collecting system info
+2023-02-10 12:29:47,319 INFO    SystemMonitor:111701 [interfaces.py:start():168] Started cpu
+2023-02-10 12:29:47,320 INFO    SystemMonitor:111701 [interfaces.py:start():168] Started disk
+2023-02-10 12:29:47,321 INFO    SystemMonitor:111701 [interfaces.py:start():168] Started gpu
+2023-02-10 12:29:47,322 INFO    SystemMonitor:111701 [interfaces.py:start():168] Started memory
+2023-02-10 12:29:47,324 INFO    SystemMonitor:111701 [interfaces.py:start():168] Started network
+2023-02-10 12:29:47,359 DEBUG   HandlerThread:111701 [system_info.py:probe():195] Probing system
+2023-02-10 12:29:47,373 DEBUG   HandlerThread:111701 [git.py:repo():40] git repository is invalid
+2023-02-10 12:29:47,373 DEBUG   HandlerThread:111701 [system_info.py:probe():241] Probing system done
+2023-02-10 12:29:47,373 DEBUG   HandlerThread:111701 [system_monitor.py:probe():181] {'os': 'Linux-5.14.0-1054-oem-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2023-02-10T09:29:47.360053', 'startedAt': '2023-02-10T09:29:46.378346', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py', 'codePath': 'run.py', 'host': 'techtoker', 'username': 'techtoker', 'executable': '/home/techtoker/tools/anaconda3/envs/yandex_sdc/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 3195.0001, 'min': 1200.0, 'max': 4120.0}, 'cpu_freq_per_core': [{'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.002, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}], 'disk': {'total': 2014.2841339111328, 'used': 1657.9120826721191}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 62.546348571777344}}
+2023-02-10 12:29:47,373 INFO    HandlerThread:111701 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-10 12:29:47,374 INFO    HandlerThread:111701 [system_monitor.py:probe():185] Publishing system info
+2023-02-10 12:29:47,374 DEBUG   HandlerThread:111701 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-10 12:29:47,375 DEBUG   HandlerThread:111701 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-10 12:29:47,375 DEBUG   HandlerThread:111701 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-02-10 12:29:48,039 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_122946-tv08msz6/files/requirements.txt
+2023-02-10 12:29:48,039 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_122946-tv08msz6/files/wandb-summary.json
+2023-02-10 12:29:48,040 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_122946-tv08msz6/files/conda-environment.yaml
+2023-02-10 12:29:48,978 DEBUG   HandlerThread:111701 [system_info.py:_save_conda():86] Saving conda packages done
+2023-02-10 12:29:48,980 INFO    HandlerThread:111701 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-10 12:29:48,992 DEBUG   SenderThread:111701 [sender.py:send():334] send: files
+2023-02-10 12:29:48,992 INFO    SenderThread:111701 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-02-10 12:29:49,001 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-10 12:29:49,002 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: stop_status
+2023-02-10 12:29:49,039 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/conda-environment.yaml
+2023-02-10 12:29:49,039 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_122946-tv08msz6/files/wandb-metadata.json
+2023-02-10 12:29:49,276 DEBUG   SenderThread:111701 [sender.py:send():334] send: telemetry
+2023-02-10 12:29:49,277 DEBUG   SenderThread:111701 [sender.py:send():334] send: config
+2023-02-10 12:29:49,281 DEBUG   SenderThread:111701 [sender.py:send():334] send: telemetry
+2023-02-10 12:29:49,790 INFO    Thread-16 :111701 [upload_job.py:push():143] Uploaded file /tmp/tmp4llv7z01wandb/712a41kg-wandb-metadata.json
+2023-02-10 12:29:50,037 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:29:51,984 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:29:52,038 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:29:54,039 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:29:57,143 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:29:58,042 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:00,043 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:02,044 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:02,460 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:30:04,000 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:04,001 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:04,044 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:06,046 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:08,047 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:08,187 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:30:09,002 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:10,048 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:12,049 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:13,959 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:30:14,003 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:14,050 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:16,051 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:18,052 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:19,004 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:19,734 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:30:20,057 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:20,057 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/config.yaml
+2023-02-10 12:30:22,058 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:24,005 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:24,059 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:25,470 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:30:26,060 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:28,061 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:29,007 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:30,062 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:31,232 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:30:32,063 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:34,008 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:34,064 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:36,065 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:36,984 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:30:38,066 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:39,009 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:40,067 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:42,068 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:42,761 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:30:44,010 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:44,069 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:46,070 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:47,324 DEBUG   SystemMonitor:111701 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-10 12:30:47,326 DEBUG   SenderThread:111701 [sender.py:send():334] send: stats
+2023-02-10 12:30:48,071 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:48,537 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:30:49,011 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:50,072 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:52,073 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:54,012 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:30:54,074 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:54,314 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:30:56,075 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:58,076 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:30:59,014 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:00,077 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:00,091 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:31:02,078 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:04,015 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:04,079 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:05,837 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:31:06,080 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:08,081 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:09,016 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:10,082 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:11,548 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:31:12,083 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:14,017 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:14,084 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:16,085 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:17,279 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:31:17,328 DEBUG   SenderThread:111701 [sender.py:send():334] send: stats
+2023-02-10 12:31:18,086 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:19,018 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:20,087 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:22,088 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:23,005 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:31:24,019 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:24,089 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:26,090 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:28,091 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:28,780 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:31:29,020 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:30,092 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:32,093 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:34,022 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:34,094 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:34,602 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:31:36,095 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:38,096 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:39,023 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:40,097 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:40,385 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:31:42,098 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:44,024 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:44,099 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:46,100 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:46,174 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:31:47,330 DEBUG   SenderThread:111701 [sender.py:send():334] send: stats
+2023-02-10 12:31:48,101 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:49,025 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:50,102 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:51,984 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:31:52,103 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:54,026 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:31:54,104 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:56,105 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:57,767 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:31:58,106 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:31:59,028 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:00,107 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:02,109 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:03,547 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:32:04,029 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:04,110 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:06,111 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:08,112 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:09,030 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:09,278 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:32:10,113 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:12,114 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:14,031 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:14,115 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:15,036 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:32:16,116 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:17,331 DEBUG   SenderThread:111701 [sender.py:send():334] send: stats
+2023-02-10 12:32:18,117 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:19,032 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:20,118 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:20,791 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:32:22,119 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:24,034 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:24,120 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:26,121 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:26,543 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:32:28,122 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:29,035 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:30,123 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:32,124 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:32,316 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:32:34,036 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:34,125 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:36,126 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:38,127 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:38,151 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:32:39,037 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:40,128 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:42,130 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:43,957 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:32:44,038 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:44,131 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:46,132 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:47,333 DEBUG   SenderThread:111701 [sender.py:send():334] send: stats
+2023-02-10 12:32:48,133 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:49,040 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:49,753 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:32:50,134 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:52,135 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:54,041 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:32:54,136 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:55,533 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:32:56,137 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:58,138 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:32:59,042 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:00,139 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:01,323 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:33:02,140 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:04,043 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:04,141 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:06,142 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:07,121 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:33:08,143 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:09,045 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:10,144 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:12,145 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:12,979 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:33:14,046 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:14,147 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:16,148 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:17,334 DEBUG   SenderThread:111701 [sender.py:send():334] send: stats
+2023-02-10 12:33:18,149 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:18,752 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:33:19,047 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:20,150 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:22,151 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:24,048 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:24,152 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:24,512 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:33:26,153 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:28,154 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:29,049 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:30,155 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:30,287 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:33:32,156 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:34,051 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:34,158 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:36,087 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:33:36,159 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:38,159 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:39,052 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:40,161 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:41,952 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:33:42,162 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:44,053 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:44,163 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:46,164 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:47,335 DEBUG   SenderThread:111701 [sender.py:send():334] send: stats
+2023-02-10 12:33:47,337 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:33:48,165 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:49,054 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:50,166 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:52,167 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:52,690 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:33:54,055 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:33:54,168 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:56,169 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:58,115 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:33:58,170 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:33:59,056 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:34:00,171 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:34:02,172 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:34:03,954 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:34:04,058 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:34:04,173 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:34:06,174 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:34:08,175 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:34:09,059 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 12:34:09,668 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:34:10,176 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:34:10,943 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-10 12:34:10,962 DEBUG   SenderThread:111701 [sender.py:send():334] send: telemetry
+2023-02-10 12:34:10,963 DEBUG   SenderThread:111701 [sender.py:send():334] send: exit
+2023-02-10 12:34:10,963 INFO    SenderThread:111701 [sender.py:send_exit():557] handling exit code: 0
+2023-02-10 12:34:10,964 INFO    SenderThread:111701 [sender.py:send_exit():559] handling runtime: 263
+2023-02-10 12:34:10,964 INFO    SenderThread:111701 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-10 12:34:10,964 INFO    SenderThread:111701 [sender.py:send_exit():565] send defer
+2023-02-10 12:34:10,965 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:10,965 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 0
+2023-02-10 12:34:10,965 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:10,966 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 0
+2023-02-10 12:34:10,966 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 1
+2023-02-10 12:34:10,966 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:10,966 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 1
+2023-02-10 12:34:10,966 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:10,966 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 1
+2023-02-10 12:34:10,966 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 2
+2023-02-10 12:34:10,967 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:10,967 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 2
+2023-02-10 12:34:10,967 INFO    HandlerThread:111701 [system_monitor.py:finish():161] Stopping system monitor
+2023-02-10 12:34:10,968 DEBUG   SystemMonitor:111701 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-02-10 12:34:10,968 DEBUG   SystemMonitor:111701 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-02-10 12:34:10,970 INFO    HandlerThread:111701 [interfaces.py:finish():175] Joined cpu
+2023-02-10 12:34:10,970 INFO    HandlerThread:111701 [interfaces.py:finish():175] Joined disk
+2023-02-10 12:34:11,079 INFO    HandlerThread:111701 [interfaces.py:finish():175] Joined gpu
+2023-02-10 12:34:11,080 INFO    HandlerThread:111701 [interfaces.py:finish():175] Joined memory
+2023-02-10 12:34:11,080 INFO    HandlerThread:111701 [interfaces.py:finish():175] Joined network
+2023-02-10 12:34:11,081 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:11,081 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 2
+2023-02-10 12:34:11,081 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 3
+2023-02-10 12:34:11,081 DEBUG   SenderThread:111701 [sender.py:send():334] send: stats
+2023-02-10 12:34:11,081 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:11,082 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 3
+2023-02-10 12:34:11,084 DEBUG   SenderThread:111701 [sender.py:send():334] send: history
+2023-02-10 12:34:11,084 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: summary_record
+2023-02-10 12:34:11,085 INFO    SenderThread:111701 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-10 12:34:11,085 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:11,085 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 3
+2023-02-10 12:34:11,085 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 4
+2023-02-10 12:34:11,086 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:11,086 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 4
+2023-02-10 12:34:11,086 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:11,086 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 4
+2023-02-10 12:34:11,086 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 5
+2023-02-10 12:34:11,087 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:11,087 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 5
+2023-02-10 12:34:11,087 DEBUG   SenderThread:111701 [sender.py:send():334] send: summary
+2023-02-10 12:34:11,088 INFO    SenderThread:111701 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-10 12:34:11,088 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:11,088 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 5
+2023-02-10 12:34:11,088 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 6
+2023-02-10 12:34:11,089 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:11,089 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 6
+2023-02-10 12:34:11,089 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:11,089 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 6
+2023-02-10 12:34:11,095 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 12:34:11,177 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/wandb-summary.json
+2023-02-10 12:34:11,423 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 7
+2023-02-10 12:34:11,423 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:11,423 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 7
+2023-02-10 12:34:11,424 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:11,424 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 7
+2023-02-10 12:34:11,698 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 8
+2023-02-10 12:34:11,698 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:11,698 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 8
+2023-02-10 12:34:11,699 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:11,699 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 8
+2023-02-10 12:34:11,699 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 9
+2023-02-10 12:34:11,700 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:11,700 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 9
+2023-02-10 12:34:11,700 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:11,701 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 9
+2023-02-10 12:34:11,701 INFO    SenderThread:111701 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-02-10 12:34:11,964 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-10 12:34:12,178 INFO    Thread-13 :111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:34:12,179 INFO    SenderThread:111701 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_122946-tv08msz6/files/config.yaml
+2023-02-10 12:34:12,179 INFO    SenderThread:111701 [dir_watcher.py:finish():392] scan: ./wandb/run-20230210_122946-tv08msz6/files
+2023-02-10 12:34:12,179 INFO    SenderThread:111701 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_122946-tv08msz6/files/conda-environment.yaml conda-environment.yaml
+2023-02-10 12:34:12,180 INFO    SenderThread:111701 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_122946-tv08msz6/files/output.log output.log
+2023-02-10 12:34:12,180 INFO    SenderThread:111701 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_122946-tv08msz6/files/wandb-metadata.json wandb-metadata.json
+2023-02-10 12:34:12,186 INFO    SenderThread:111701 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_122946-tv08msz6/files/config.yaml config.yaml
+2023-02-10 12:34:12,187 INFO    SenderThread:111701 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_122946-tv08msz6/files/wandb-summary.json wandb-summary.json
+2023-02-10 12:34:12,193 INFO    SenderThread:111701 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_122946-tv08msz6/files/requirements.txt requirements.txt
+2023-02-10 12:34:12,204 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 10
+2023-02-10 12:34:12,204 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: poll_exit
+2023-02-10 12:34:12,206 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:12,206 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 10
+2023-02-10 12:34:12,213 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:12,214 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 10
+2023-02-10 12:34:12,214 INFO    SenderThread:111701 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-10 12:34:12,965 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-10 12:34:12,965 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: poll_exit
+2023-02-10 12:34:12,974 INFO    Thread-20 :111701 [upload_job.py:push():143] Uploaded file ./wandb/run-20230210_122946-tv08msz6/files/wandb-summary.json
+2023-02-10 12:34:12,977 INFO    Thread-19 :111701 [upload_job.py:push():143] Uploaded file ./wandb/run-20230210_122946-tv08msz6/files/config.yaml
+2023-02-10 12:34:12,988 INFO    Thread-17 :111701 [upload_job.py:push():143] Uploaded file ./wandb/run-20230210_122946-tv08msz6/files/conda-environment.yaml
+2023-02-10 12:34:13,005 INFO    Thread-18 :111701 [upload_job.py:push():143] Uploaded file ./wandb/run-20230210_122946-tv08msz6/files/output.log
+2023-02-10 12:34:13,047 INFO    Thread-21 :111701 [upload_job.py:push():143] Uploaded file ./wandb/run-20230210_122946-tv08msz6/files/requirements.txt
+2023-02-10 12:34:13,248 INFO    Thread-12 :111701 [sender.py:transition_state():585] send defer: 11
+2023-02-10 12:34:13,249 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:13,249 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 11
+2023-02-10 12:34:13,250 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:13,250 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 11
+2023-02-10 12:34:13,250 INFO    SenderThread:111701 [file_pusher.py:join():165] waiting for file pusher
+2023-02-10 12:34:13,250 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 12
+2023-02-10 12:34:13,250 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:13,251 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 12
+2023-02-10 12:34:13,251 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:13,251 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 12
+2023-02-10 12:34:13,966 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-10 12:34:14,194 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 13
+2023-02-10 12:34:14,194 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: poll_exit
+2023-02-10 12:34:14,195 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:14,195 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 13
+2023-02-10 12:34:14,196 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:14,196 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 13
+2023-02-10 12:34:14,197 INFO    SenderThread:111701 [sender.py:transition_state():585] send defer: 14
+2023-02-10 12:34:14,197 DEBUG   SenderThread:111701 [sender.py:send():334] send: final
+2023-02-10 12:34:14,198 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 12:34:14,198 DEBUG   SenderThread:111701 [sender.py:send():334] send: footer
+2023-02-10 12:34:14,198 INFO    HandlerThread:111701 [handler.py:handle_request_defer():170] handle defer: 14
+2023-02-10 12:34:14,199 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: defer
+2023-02-10 12:34:14,199 INFO    SenderThread:111701 [sender.py:send_request_defer():581] handle sender defer: 14
+2023-02-10 12:34:14,201 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-10 12:34:14,201 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: server_info
+2023-02-10 12:34:14,202 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: get_summary
+2023-02-10 12:34:14,202 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: poll_exit
+2023-02-10 12:34:14,202 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: sampled_history
+2023-02-10 12:34:14,203 DEBUG   SenderThread:111701 [sender.py:send_request():361] send_request: server_info
+2023-02-10 12:34:14,762 DEBUG   HandlerThread:111701 [handler.py:handle_request():144] handle_request: shutdown
+2023-02-10 12:34:14,762 INFO    HandlerThread:111701 [handler.py:finish():841] shutting down handler
+2023-02-10 12:34:15,202 INFO    WriterThread:111701 [datastore.py:close():299] close: ./wandb/run-20230210_122946-tv08msz6/run-tv08msz6.wandb
+2023-02-10 12:34:15,761 INFO    SenderThread:111701 [sender.py:finish():1491] shutting down sender
+2023-02-10 12:34:15,761 INFO    SenderThread:111701 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-10 12:34:15,761 INFO    SenderThread:111701 [file_pusher.py:join():165] waiting for file pusher

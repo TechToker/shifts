@@ -125,14 +125,14 @@ class RIPAgent:
         # of plan j under the likelihood of model i.
         scores = torch.stack(scores, dim=0)
 
-        if self.cache_all_preds:
-            # permute axes to (B, G, T, 2)
-            # predictions = np.transpose(predictions, axes=(1, 0, 2, 3))
-            predictions = predictions.permute((1, 0, 2, 3))
-
-            # permute axes to (B, G, K)
-            scores = scores.permute((2, 1, 0))
-            return predictions, scores, None
+        # if self.cache_all_preds:
+        #     # permute axes to (B, G, T, 2)
+        #     # predictions = np.transpose(predictions, axes=(1, 0, 2, 3))
+        #     predictions = predictions.permute((1, 0, 2, 3))
+        #
+        #     # permute axes to (B, G, K)
+        #     scores = scores.permute((2, 1, 0))
+        #     return predictions, scores, None
 
         # Aggregate scores from the `K` models.
         scores = self.run_rip_aggregation(
@@ -163,6 +163,10 @@ class RIPAgent:
             scores_to_aggregate=plan_confidence_scores.permute((1, 0)))
 
         plan_confidence_scores = plan_confidence_scores.detach()
+
+        if self.cache_all_preds:
+            return best_plans, plan_confidence_scores, plan_confidence_scores
+
         return (best_plans, plan_confidence_scores,
                 pred_request_confidence_scores)
 
@@ -216,12 +220,14 @@ def evaluate_step_rip(
             plan_confidence_scores=plan_confidence_scores,
             pred_request_confidence_scores=pred_request_confidence_scores)
 
-    if not model.cache_all_preds:
+    if not model.cache_all_preds and sdc_loss is not None:
         sdc_loss.cache_batch_losses(
             predictions_list=predictions,
             ground_truth_batch=ground_truth,
             plan_confidence_scores_list=plan_confidence_scores,
             pred_request_confidence_scores=pred_request_confidence_scores)
+
+    return predictions, plan_confidence_scores, pred_request_confidence_scores
 
 
 def load_rip_checkpoints(
@@ -244,9 +250,9 @@ def load_rip_checkpoints(
     for file_name in checkpoint_file_names:
         ckpt_path = os.path.join(checkpoint_dir, file_name)
         try:
-            model._models[
-                models_loaded].load_state_dict(
-                torch.load(ckpt_path, map_location=device))
+            state_dict = torch.load(ckpt_path, map_location=device)
+            # state_dict = fix_state_dict(state_dict)
+            model._models[models_loaded].load_state_dict(state_dict)
             models_loaded += 1
             print(f'Loaded ensemble member {models_loaded} '
                   f'from path {ckpt_path}')

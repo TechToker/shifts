@@ -1,0 +1,224 @@
+Using 1 workers in PyTorch dataloading.
+RIP kwargs:
+{'cache_all_preds': False,
+ 'device': 'cuda:0',
+ 'k': 3,
+ 'model_name': 'bc',
+ 'num_preds': 5,
+ 'per_plan_algorithm': 'BCM',
+ 'per_scene_algorithm': 'BCM',
+ 'samples_per_model': 10}
+Building RIP agent with backbone model bc, per-plan algorithm BCM, per-scene algorithm BCM, 3 ensemble members.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Loaded ensemble member 1 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-10-epoch-57.pt
+Loaded ensemble member 2 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-40-epoch-78.pt
+Loaded ensemble member 3 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-20-epoch-90.pt
+Successfully loaded all 3 ensemble members.
+Loading train dataset(s).
+Loading dataset moscow__train.
+388406/388406 scenes fit the filter criteria.
+Loaded dataset moscow__train.
+Loading development dataset(s).
+Loading dataset ood__development.
+5107/36605 scenes fit the filter criteria.
+Loaded dataset ood__development.
+Finished loading all datasets.
+defaultdict(<class 'dict'>,
+            {'development': {'ood__development': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7f6618709640>},
+             'train': {'moscow__train': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7f6611ecd490>}})
+Building dataloaders with num_workers=1, prefetch_factor=2.
+Running evaluation. Setting num_epochs to 1.
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+  0%|          | 0/1 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+177it [04:22,  1.32s/it]
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Default__avgADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Default__weightedADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Default__top1ADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Default__minADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Default__avgFDE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Default__weightedFDE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Default__top1FDE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Default__minFDE.
+Successfully updated results dataframe at ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/results.tsv.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Random__avgADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Random__weightedADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Random__top1ADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Random__minADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Random__avgFDE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Random__weightedFDE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Random__top1FDE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Random__minFDE.
+Successfully updated results dataframe at ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/results.tsv.
+Computing Optimal retention baseline.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Optimal__avgADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Optimal__weightedADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Optimal__top1ADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Optimal__minADE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Optimal__avgFDE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Optimal__weightedFDE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Optimal__top1FDE.
+Stored fbeta retention results to ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/fbeta_retention/Optimal__minFDE.
+Successfully updated results dataframe at ../../dataset//metrics/rip-bc-k_3-plan_bcm-scene_bcm/results.tsv.
+No previous results found at path ../../dataset//metadata_cache/rip-bc-k_3-plan_bcm-scene_bcm/request.tsv. Storing a new request_df.
+Successfully stored initial request_df at ../../dataset//metadata_cache/rip-bc-k_3-plan_bcm-scene_bcm/request.tsv.
+No previous results found at path ../../dataset//metadata_cache/rip-bc-k_3-plan_bcm-scene_bcm/scene.tsv. Storing a new scene_df.
+
+Val Losses: ood__development__Default__avgADE__f_auc 0.70 | ood__development__Default__avgADE__f95 0.82 | ood__development__Default__weightedADE__f_auc 0.70 | ood__development__Default__weightedADE__f95 0.83 | ood__development__Default__top1ADE__f_auc 0.69 | ood__development__Default__top1ADE__f95 0.83 | ood__development__Default__minADE__f_auc 0.68 | ood__development__Default__minADE__f95 0.87 | ood__development__Default__avgFDE__f_auc 0.70 | ood__development__Default__avgFDE__f95 0.79 | ood__development__Default__weightedFDE__f_auc 0.70 | ood__development__Default__weightedFDE__f95 0.80 | ood__development__Default__top1FDE__f_auc 0.70 | ood__development__Default__top1FDE__f95 0.80 | ood__development__Default__minFDE__f_auc 0.69 | ood__development__Default__minFDE__f95 0.84 | ood__development__Default__avgADE__r_auc 0.30 | ood__development__Default__weightedADE__r_auc 0.30 | ood__development__Default__top1ADE__r_auc 0.30 | ood__development__Default__minADE__r_auc 0.22 | ood__development__Default__avgFDE__r_auc 0.64 | ood__development__Default__weightedFDE__r_auc 0.63 | ood__development__Default__top1FDE__r_auc 0.63 | ood__development__Default__minFDE__r_auc 0.46 | ood__development__Random__avgADE__f_auc 0.52 | ood__development__Random__avgADE__f95 0.78 | ood__development__Random__weightedADE__f_auc 0.52 | ood__development__Random__weightedADE__f95 0.79 | ood__development__Random__top1ADE__f_auc 0.52 | ood__development__Random__top1ADE__f95 0.79 | ood__development__Random__minADE__f_auc 0.54 | ood__development__Random__minADE__f95 0.83 | ood__development__Random__avgFDE__f_auc 0.50 | ood__development__Random__avgFDE__f95 0.75 | ood__development__Random__weightedFDE__f_auc 0.51 | ood__development__Random__weightedFDE__f95 0.76 | ood__development__Random__top1FDE__f_auc 0.51 | ood__development__Random__top1FDE__f95 0.76 | ood__development__Random__minFDE__f_auc 0.53 | ood__development__Random__minFDE__f95 0.80 | ood__development__Random__avgADE__r_auc 0.75 | ood__development__Random__weightedADE__r_auc 0.74 | ood__development__Random__top1ADE__r_auc 0.74 | ood__development__Random__minADE__r_auc 0.57 | ood__development__Random__avgFDE__r_auc 1.68 | ood__development__Random__weightedFDE__r_auc 1.67 | ood__development__Random__top1FDE__r_auc 1.67 | ood__development__Random__minFDE__r_auc 1.26 | ood__development__Optimal__avgADE__f_auc 0.71 | ood__development__Optimal__avgADE__f95 0.82 | ood__development__Optimal__weightedADE__f_auc 0.71 | ood__development__Optimal__weightedADE__f95 0.83 | ood__development__Optimal__top1ADE__f_auc 0.70 | ood__development__Optimal__top1ADE__f95 0.83 | ood__development__Optimal__minADE__f_auc 0.69 | ood__development__Optimal__minADE__f95 0.87 | ood__development__Optimal__avgFDE__f_auc 0.71 | ood__development__Optimal__avgFDE__f95 0.79 | ood__development__Optimal__weightedFDE__f_auc 0.71 | ood__development__Optimal__weightedFDE__f95 0.80 | ood__development__Optimal__top1FDE__f_auc 0.71 | ood__development__Optimal__top1FDE__f95 0.80 | ood__development__Optimal__minFDE__f_auc 0.70 | ood__development__Optimal__minFDE__f95 0.85 | ood__development__Optimal__avgADE__r_auc 0.23 | ood__development__Optimal__weightedADE__r_auc 0.22 | ood__development__Optimal__top1ADE__r_auc 0.22 | ood__development__Optimal__minADE__r_auc 0.15 | ood__development__Optimal__avgFDE__r_auc 0.43 | ood__development__Optimal__weightedFDE__r_auc 0.42 | ood__development__Optimal__top1FDE__r_auc 0.41 | ood__development__Optimal__minFDE__r_auc 0.25 |

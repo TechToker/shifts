@@ -1,0 +1,201 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.9
+    framework: huggingface
+    huggingface_version: 4.26.0
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.16
+    start_time: 1675969040.678476
+    t:
+      1:
+      - 1
+      - 2
+      - 3
+      - 5
+      - 11
+      - 49
+      - 53
+      - 55
+      2:
+      - 1
+      - 2
+      - 3
+      - 5
+      - 11
+      - 41
+      - 49
+      - 53
+      - 55
+      3:
+      - 13
+      - 23
+      4: 3.8.16
+      5: 0.13.9
+      6: 4.26.0
+      8:
+      - 5
+bc_deterministic:
+  desc: null
+  value: false
+bc_generation_mode:
+  desc: null
+  value: sampling
+data_dtype:
+  desc: null
+  value: float32
+data_num_workers:
+  desc: null
+  value: 4
+data_prefetch_factor:
+  desc: null
+  value: 2
+data_use_prerendered:
+  desc: null
+  value: true
+debug_collect_dataset_stats:
+  desc: null
+  value: true
+debug_eval_mode:
+  desc: null
+  value: true
+debug_overfit_dev_data_only:
+  desc: null
+  value: false
+debug_overfit_eval:
+  desc: null
+  value: true
+debug_overfit_n_examples:
+  desc: null
+  value: 10
+dim_scale_eps:
+  desc: null
+  value: 1.0e-07
+dir_checkpoint:
+  desc: null
+  value: ../../baseline-models/
+dir_data:
+  desc: null
+  value: ../../dataset/
+dir_metadata_cache:
+  desc: null
+  value: null
+dir_metrics:
+  desc: null
+  value: null
+dir_tensorboard:
+  desc: null
+  value: tb
+dir_wandb:
+  desc: null
+  value: ./
+exp_batch_size:
+  desc: null
+  value: 128
+exp_checkpoint_frequency:
+  desc: null
+  value: 1
+exp_checkpoint_validation_loss:
+  desc: null
+  value: moscow__development__ade
+exp_device:
+  desc: null
+  value: cuda:0
+exp_group:
+  desc: null
+  value: null
+exp_image_downsize_hw:
+  desc: null
+  value: null
+exp_lr:
+  desc: null
+  value: 0.0001
+exp_name:
+  desc: null
+  value: 2o0cms14
+exp_num_epochs:
+  desc: null
+  value: 100
+exp_num_lr_warmup_epochs:
+  desc: null
+  value: 1
+exp_print_every_nth_forward:
+  desc: null
+  value: false
+exp_sweep:
+  desc: null
+  value: false
+exp_use_cuda:
+  desc: null
+  value: true
+fbeta_beta:
+  desc: null
+  value: 1.0
+fbeta_threshold:
+  desc: null
+  value: 1.0
+model_checkpoint_key:
+  desc: null
+  value: null
+model_clip_gradients:
+  desc: null
+  value: true
+model_dim_hidden:
+  desc: null
+  value: 512
+model_in_channels:
+  desc: null
+  value: 17
+model_name:
+  desc: null
+  value: bc
+model_output_shape:
+  desc: null
+  value:
+  - 25
+  - 2
+model_prefix:
+  desc: null
+  value: Default
+model_weight_decay:
+  desc: null
+  value: 0.0
+np_seed:
+  desc: null
+  value: 42
+rip_cache_all_preds:
+  desc: null
+  value: true
+rip_eval_subgroup:
+  desc: null
+  value: null
+rip_k:
+  desc: null
+  value: 3
+rip_num_preds:
+  desc: null
+  value: 5
+rip_per_plan_algorithm:
+  desc: null
+  value: BCM
+rip_per_scene_algorithm:
+  desc: null
+  value: BCM
+rip_samples_per_model:
+  desc: null
+  value: 10
+tb_logging:
+  desc: null
+  value: false
+torch_seed:
+  desc: null
+  value: 42
+verbose:
+  desc: null
+  value: false
+wandb_project:
+  desc: null
+  value: ydx_prediction

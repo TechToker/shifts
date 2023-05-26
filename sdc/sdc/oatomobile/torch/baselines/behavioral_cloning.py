@@ -17,7 +17,7 @@
 Defines a behavioral cloning model with autoregressive RNN decoder,
 based on Conditional Imitation Learning (CIL) [Codevilla et al., 2017].
 """
-
+import time
 from typing import Mapping
 from typing import Tuple
 
@@ -191,10 +191,16 @@ class BehaviouralModel(nn.Module):
         # Encodes the visual input.
         # Cache embedding, because we may use it in scoring plans
         # from other ensemble members in RIP.
+
+        start_time = time.time()
+
         self._z = self._encoder(feature_maps)
 
         # Decode a trajectory.
         y, _ = self.decode(z=self._z)
+
+        print(f'exec time: {time.time() - start_time}')
+
         return y
 
     def score_plans(

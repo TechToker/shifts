@@ -1,0 +1,38 @@
+2023-02-27 16:42:11,701 INFO    MainThread:802716 [wandb_setup.py:_flush():68] Configure stats pid to 802716
+2023-02-27 16:42:11,701 INFO    MainThread:802716 [wandb_setup.py:_flush():68] Loading settings from /home/techtoker/.config/wandb/settings
+2023-02-27 16:42:11,701 INFO    MainThread:802716 [wandb_setup.py:_flush():68] Loading settings from /home/techtoker/projects/yandex_sdc/shifts-main/sdc/wandb/settings
+2023-02-27 16:42:11,702 INFO    MainThread:802716 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-27 16:42:11,702 INFO    MainThread:802716 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'run.py', 'program': '/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py'}
+2023-02-27 16:42:11,702 INFO    MainThread:802716 [wandb_init.py:_log_setup():478] Logging user logs to ./wandb/run-20230227_164211-n2he2w52/logs/debug.log
+2023-02-27 16:42:11,702 INFO    MainThread:802716 [wandb_init.py:_log_setup():479] Logging internal logs to ./wandb/run-20230227_164211-n2he2w52/logs/debug-internal.log
+2023-02-27 16:42:11,703 INFO    MainThread:802716 [wandb_init.py:init():518] calling init triggers
+2023-02-27 16:42:11,703 INFO    MainThread:802716 [wandb_init.py:init():521] wandb.init called with sweep_config: {}
+config: {}
+2023-02-27 16:42:11,703 INFO    MainThread:802716 [wandb_init.py:init():571] starting backend
+2023-02-27 16:42:11,703 INFO    MainThread:802716 [wandb_init.py:init():575] setting up manager
+2023-02-27 16:42:11,715 INFO    MainThread:802716 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-02-27 16:42:11,722 INFO    MainThread:802716 [wandb_init.py:init():582] backend started and connected
+2023-02-27 16:42:11,732 INFO    MainThread:802716 [wandb_init.py:init():670] updated telemetry
+2023-02-27 16:42:11,734 INFO    MainThread:802716 [wandb_init.py:init():710] communicating run to backend with 60.0 second timeout
+2023-02-27 16:42:12,554 INFO    MainThread:802716 [wandb_run.py:_on_init():2121] communicating current version
+2023-02-27 16:42:13,018 WARNING MainThread:802716 [wandb_init.py:init():1129] interrupted
+Traceback (most recent call last):
+  File "/home/techtoker/.local/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1108, in init
+    run = wi.init()
+  File "/home/techtoker/.local/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 756, in init
+    run._on_init()
+  File "/home/techtoker/.local/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 2122, in _on_init
+    self._check_version = self._backend.interface.communicate_check_version(
+  File "/home/techtoker/.local/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 106, in communicate_check_version
+    ret = self._communicate_check_version(check_version)
+  File "/home/techtoker/.local/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 510, in _communicate_check_version
+    result = self._communicate(rec)
+  File "/home/techtoker/.local/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 285, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/techtoker/.local/lib/python3.8/site-packages/wandb/sdk/interface/router.py", line 36, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/home/techtoker/tools/anaconda3/envs/yandex_sdc/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/techtoker/tools/anaconda3/envs/yandex_sdc/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

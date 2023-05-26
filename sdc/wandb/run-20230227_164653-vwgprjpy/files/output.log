@@ -1,0 +1,118 @@
+Using 1 workers in PyTorch dataloading.
+Training Behavioral Cloning
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+Loading train dataset(s).
+Loading dataset moscow__train.
+388406/388406 scenes fit the filter criteria.
+Loaded dataset moscow__train.
+Loading development dataset(s).
+Loading dataset ood__development.
+5107/36605 scenes fit the filter criteria.
+Loaded dataset ood__development.
+Finished loading all datasets.
+defaultdict(<class 'dict'>,
+            {'development': {'ood__development': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7fad61c58be0>},
+             'train': {'moscow__train': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7fad61c58dc0>}})
+Building dataloaders with num_workers=1, prefetch_factor=2.
+Running evaluation. Setting num_epochs to 1.
+  0%|          | 0/1 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  0%|          | 0/1 [02:37<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py", line 91, in <module>
+    main()
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py", line 84, in main
+    train(c)
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/trainer.py", line 269, in train
+    loss_val_dict = evaluate_epoch(dataloader_val, dataset_key)
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/trainer.py", line 195, in evaluate_epoch
+    metadata_cache.cache_dataset_stats(dataset_key)
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/cache_metadata.py", line 156, in cache_dataset_stats
+    assert len(request_attribute) > 0
+AssertionError

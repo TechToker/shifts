@@ -1,0 +1,9 @@
+
+Using 4 workers in PyTorch dataloading.
+Traceback (most recent call last):
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py", line 91, in <module>
+    main()
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py", line 84, in main
+    train(c)
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/trainer.py", line 54, in train
+    if c.exp_image_downsize_hw is None:

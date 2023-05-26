@@ -1,0 +1,99 @@
+2023-02-10 14:50:59,826 INFO    StreamThr :116966 [internal.py:wandb_internal():87] W&B internal server running at pid: 116966, started at: 2023-02-10 14:50:59.824130
+2023-02-10 14:50:59,832 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status
+2023-02-10 14:50:59,836 INFO    WriterThread:116966 [datastore.py:open_for_write():85] open: ./wandb/run-20230210_145059-sf1kuavs/run-sf1kuavs.wandb
+2023-02-10 14:50:59,847 DEBUG   SenderThread:116966 [sender.py:send():334] send: header
+2023-02-10 14:50:59,847 DEBUG   SenderThread:116966 [sender.py:send():334] send: run
+2023-02-10 14:51:00,551 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: check_version
+2023-02-10 14:51:00,558 INFO    SenderThread:116966 [dir_watcher.py:__init__():216] watching files in: ./wandb/run-20230210_145059-sf1kuavs/files
+2023-02-10 14:51:00,559 INFO    SenderThread:116966 [sender.py:_start_run_threads():1065] run started: sf1kuavs with start time 1676029859.817328
+2023-02-10 14:51:00,559 DEBUG   SenderThread:116966 [sender.py:send_request():361] send_request: summary_record
+2023-02-10 14:51:00,560 INFO    SenderThread:116966 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-10 14:51:00,561 DEBUG   SenderThread:116966 [sender.py:send_request():361] send_request: check_version
+2023-02-10 14:51:00,937 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: run_start
+2023-02-10 14:51:00,955 DEBUG   HandlerThread:116966 [system_info.py:__init__():31] System info init
+2023-02-10 14:51:00,955 DEBUG   HandlerThread:116966 [system_info.py:__init__():46] System info init done
+2023-02-10 14:51:00,956 INFO    HandlerThread:116966 [system_monitor.py:start():151] Starting system monitor
+2023-02-10 14:51:00,956 INFO    SystemMonitor:116966 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-10 14:51:00,957 INFO    HandlerThread:116966 [system_monitor.py:probe():172] Collecting system info
+2023-02-10 14:51:00,959 INFO    SystemMonitor:116966 [interfaces.py:start():168] Started cpu
+2023-02-10 14:51:00,961 INFO    SystemMonitor:116966 [interfaces.py:start():168] Started disk
+2023-02-10 14:51:00,963 INFO    SystemMonitor:116966 [interfaces.py:start():168] Started gpu
+2023-02-10 14:51:00,966 INFO    SystemMonitor:116966 [interfaces.py:start():168] Started memory
+2023-02-10 14:51:00,968 INFO    SystemMonitor:116966 [interfaces.py:start():168] Started network
+2023-02-10 14:51:01,018 DEBUG   HandlerThread:116966 [system_info.py:probe():195] Probing system
+2023-02-10 14:51:01,033 DEBUG   HandlerThread:116966 [git.py:repo():40] git repository is invalid
+2023-02-10 14:51:01,033 DEBUG   HandlerThread:116966 [system_info.py:probe():241] Probing system done
+2023-02-10 14:51:01,033 DEBUG   HandlerThread:116966 [system_monitor.py:probe():181] {'os': 'Linux-5.14.0-1054-oem-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2023-02-10T11:51:01.018623', 'startedAt': '2023-02-10T11:50:59.791030', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py', 'codePath': 'run.py', 'host': 'techtoker', 'username': 'techtoker', 'executable': '/home/techtoker/tools/anaconda3/envs/yandex_sdc/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 3195.0042999999996, 'min': 1200.0, 'max': 4120.0}, 'cpu_freq_per_core': [{'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}], 'disk': {'total': 2014.2841339111328, 'used': 1658.0464706420898}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 62.546348571777344}}
+2023-02-10 14:51:01,034 INFO    HandlerThread:116966 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-10 14:51:01,034 INFO    HandlerThread:116966 [system_monitor.py:probe():185] Publishing system info
+2023-02-10 14:51:01,034 DEBUG   HandlerThread:116966 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-10 14:51:01,038 DEBUG   HandlerThread:116966 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-10 14:51:01,039 DEBUG   HandlerThread:116966 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-02-10 14:51:01,569 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_145059-sf1kuavs/files/requirements.txt
+2023-02-10 14:51:01,570 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_145059-sf1kuavs/files/conda-environment.yaml
+2023-02-10 14:51:01,571 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_145059-sf1kuavs/files/wandb-summary.json
+2023-02-10 14:51:02,571 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/conda-environment.yaml
+2023-02-10 14:51:02,639 DEBUG   HandlerThread:116966 [system_info.py:_save_conda():86] Saving conda packages done
+2023-02-10 14:51:02,666 INFO    HandlerThread:116966 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-10 14:51:02,680 DEBUG   SenderThread:116966 [sender.py:send():334] send: files
+2023-02-10 14:51:02,681 INFO    SenderThread:116966 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-02-10 14:51:02,712 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-10 14:51:02,727 DEBUG   SenderThread:116966 [sender.py:send_request():361] send_request: stop_status
+2023-02-10 14:51:03,042 DEBUG   SenderThread:116966 [sender.py:send():334] send: telemetry
+2023-02-10 14:51:03,043 DEBUG   SenderThread:116966 [sender.py:send():334] send: config
+2023-02-10 14:51:03,055 DEBUG   SenderThread:116966 [sender.py:send():334] send: telemetry
+2023-02-10 14:51:03,571 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_145059-sf1kuavs/files/wandb-metadata.json
+2023-02-10 14:51:03,572 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:03,755 INFO    Thread-20 :116966 [upload_job.py:push():143] Uploaded file /tmp/tmp6540u6nowandb/j3qywokv-wandb-metadata.json
+2023-02-10 14:51:04,897 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:51:05,579 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:07,581 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:10,218 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:51:11,586 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:13,588 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:15,547 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:51:15,590 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:17,592 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:17,709 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 14:51:17,709 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 14:51:19,594 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:20,816 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:51:21,596 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:22,711 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 14:51:23,599 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:25,601 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:26,460 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:51:27,603 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:27,712 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 14:51:29,605 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:31,607 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:31,671 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:51:32,608 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/config.yaml
+2023-02-10 14:51:32,714 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 14:51:33,609 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:35,612 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:37,293 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:51:37,614 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:37,715 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 14:51:39,616 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:41,618 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:42,512 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:51:42,717 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 14:51:43,620 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:45,623 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:47,625 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:47,719 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 14:51:48,169 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:51:49,627 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:51,629 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:52,725 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 14:51:53,345 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:51:53,631 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:55,633 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:57,635 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:51:58,527 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:51:59,638 INFO    Thread-17 :116966 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_145059-sf1kuavs/files/output.log
+2023-02-10 14:52:00,969 DEBUG   SystemMonitor:116966 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-10 14:52:00,975 DEBUG   SenderThread:116966 [sender.py:send():334] send: stats
+2023-02-10 14:52:03,978 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 14:52:08,980 DEBUG   HandlerThread:116966 [handler.py:handle_request():144] handle_request: status_report

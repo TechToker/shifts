@@ -14,6 +14,27 @@ def main():
     parser = build_parser()
     args = parser.parse_args()
 
+    args.bc_generation_mode = 'sampling'
+    args.model_name = 'bc'
+    args.dir_data = "../../dataset/"
+    args.wandb_project = "ydx_prediction"
+    args.data_use_prerendered = True
+    args.exp_batch_size = 128
+
+    args.debug_eval_mode = True
+    args.debug_overfit_eval = False # True
+
+    args.rip_per_plan_algorithm = 'BCM'
+    args.rip_per_scene_algorithm = 'BCM'
+
+    args.dir_checkpoint = "../../baseline-models/"
+    args.rip_cache_all_preds = True
+
+    #args.debug_overfit_eval = True
+    args.debug_collect_dataset_stats = True
+
+    args.rip_eval_subgroup = 'eval'
+
     if args.exp_sweep:
         print('Removing old logs.')
         os.system('rm -r wandb')
@@ -29,7 +50,7 @@ def main():
 
     wandb_args = dict(
         project=args.wandb_project,
-        entity="shifts",
+        entity="techtoker",
         dir=args.dir_wandb,
         reinit=True,
         name=args.exp_name,

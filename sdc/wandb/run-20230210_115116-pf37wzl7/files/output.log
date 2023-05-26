@@ -1,0 +1,173 @@
+Using 4 workers in PyTorch dataloading.
+RIP kwargs:
+{'cache_all_preds': True,
+ 'device': 'cuda:0',
+ 'k': 3,
+ 'model_name': 'bc',
+ 'num_preds': 5,
+ 'per_plan_algorithm': 'BCM',
+ 'per_scene_algorithm': 'BCM',
+ 'samples_per_model': 10}
+Building RIP agent with backbone model bc, per-plan algorithm BCM, per-scene algorithm BCM, 3 ensemble members.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Loaded ensemble member 1 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-10-epoch-57.pt
+Loaded ensemble member 2 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-40-epoch-78.pt
+Loaded ensemble member 3 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-20-epoch-90.pt
+Successfully loaded all 3 ensemble members.
+Loading train dataset(s).
+Loading dataset moscow__train.
+388406/388406 scenes fit the filter criteria.
+Loaded dataset moscow__train.
+Loading development dataset(s).
+Loading dataset moscow__development.
+27036/36605 scenes fit the filter criteria.
+Loaded dataset moscow__development.
+Loading dataset ood__development.
+9569/36605 scenes fit the filter criteria.
+Loaded dataset ood__development.
+Finished loading all datasets.
+defaultdict(<class 'dict'>,
+            {'development': {'moscow__development': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7f86ac137670>,
+                             'ood__development': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7f86ac1376a0>},
+             'train': {'moscow__train': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7f86a6104490>}})
+Building dataloaders with num_workers=4, prefetch_factor=2.
+Running evaluation. Setting num_epochs to 1.
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+  0%|          | 0/1 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  0%|          | 0/1 [03:04<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py", line 89, in <module>
+    main()
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py", line 82, in main
+    train(c)
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/trainer.py", line 250, in train
+    loss_train_dict = evaluate_epoch(
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/trainer.py", line 178, in evaluate_epoch
+    loss_dict = evaluate_step(**evaluate_args)
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/oatomobile/torch/baselines/robust_imitative_planning.py", line 196, in evaluate_step_rip
+    model(**batch))
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/oatomobile/torch/baselines/robust_imitative_planning.py", line 176, in __call__
+    return self.call_ensemble_members(**observation)
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/oatomobile/torch/baselines/robust_imitative_planning.py", line 103, in call_ensemble_members
+    predictions.append(model.forward(**observation))
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/oatomobile/torch/baselines/behavioral_cloning.py", line 197, in forward
+    y, _ = self.decode(z=self._z)
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/oatomobile/torch/baselines/behavioral_cloning.py", line 143, in decode
+    y_tm1 = torch.zeros(  # pylint: disable=no-member

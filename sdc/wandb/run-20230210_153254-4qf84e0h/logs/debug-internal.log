@@ -1,0 +1,421 @@
+2023-02-10 15:32:54,272 INFO    StreamThr :119741 [internal.py:wandb_internal():87] W&B internal server running at pid: 119741, started at: 2023-02-10 15:32:54.271811
+2023-02-10 15:32:54,275 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status
+2023-02-10 15:32:54,280 INFO    WriterThread:119741 [datastore.py:open_for_write():85] open: ./wandb/run-20230210_153254-4qf84e0h/run-4qf84e0h.wandb
+2023-02-10 15:32:54,281 DEBUG   SenderThread:119741 [sender.py:send():334] send: header
+2023-02-10 15:32:54,282 DEBUG   SenderThread:119741 [sender.py:send():334] send: run
+2023-02-10 15:32:54,901 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: check_version
+2023-02-10 15:32:54,905 INFO    SenderThread:119741 [dir_watcher.py:__init__():216] watching files in: ./wandb/run-20230210_153254-4qf84e0h/files
+2023-02-10 15:32:54,905 INFO    SenderThread:119741 [sender.py:_start_run_threads():1065] run started: 4qf84e0h with start time 1676032374.27156
+2023-02-10 15:32:54,905 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: summary_record
+2023-02-10 15:32:54,905 INFO    SenderThread:119741 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-10 15:32:54,906 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: check_version
+2023-02-10 15:32:55,185 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: run_start
+2023-02-10 15:32:55,203 DEBUG   HandlerThread:119741 [system_info.py:__init__():31] System info init
+2023-02-10 15:32:55,203 DEBUG   HandlerThread:119741 [system_info.py:__init__():46] System info init done
+2023-02-10 15:32:55,203 INFO    HandlerThread:119741 [system_monitor.py:start():151] Starting system monitor
+2023-02-10 15:32:55,204 INFO    SystemMonitor:119741 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-10 15:32:55,204 INFO    HandlerThread:119741 [system_monitor.py:probe():172] Collecting system info
+2023-02-10 15:32:55,205 INFO    SystemMonitor:119741 [interfaces.py:start():168] Started cpu
+2023-02-10 15:32:55,207 INFO    SystemMonitor:119741 [interfaces.py:start():168] Started disk
+2023-02-10 15:32:55,207 INFO    SystemMonitor:119741 [interfaces.py:start():168] Started gpu
+2023-02-10 15:32:55,209 INFO    SystemMonitor:119741 [interfaces.py:start():168] Started memory
+2023-02-10 15:32:55,210 INFO    SystemMonitor:119741 [interfaces.py:start():168] Started network
+2023-02-10 15:32:55,243 DEBUG   HandlerThread:119741 [system_info.py:probe():195] Probing system
+2023-02-10 15:32:55,256 DEBUG   HandlerThread:119741 [git.py:repo():40] git repository is invalid
+2023-02-10 15:32:55,257 DEBUG   HandlerThread:119741 [system_info.py:probe():241] Probing system done
+2023-02-10 15:32:55,257 DEBUG   HandlerThread:119741 [system_monitor.py:probe():181] {'os': 'Linux-5.14.0-1054-oem-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2023-02-10T12:32:55.243829', 'startedAt': '2023-02-10T12:32:54.251208', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py', 'codePath': 'run.py', 'host': 'techtoker', 'username': 'techtoker', 'executable': '/home/techtoker/tools/anaconda3/envs/yandex_sdc/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 3195.00365, 'min': 1200.0, 'max': 4120.0}, 'cpu_freq_per_core': [{'current': 1200.073, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3300.0, 'min': 1200.0, 'max': 4100.0}], 'disk': {'total': 2014.2841339111328, 'used': 1658.1337928771973}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 62.546348571777344}}
+2023-02-10 15:32:55,257 INFO    HandlerThread:119741 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-10 15:32:55,257 INFO    HandlerThread:119741 [system_monitor.py:probe():185] Publishing system info
+2023-02-10 15:32:55,257 DEBUG   HandlerThread:119741 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-10 15:32:55,258 DEBUG   HandlerThread:119741 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-10 15:32:55,258 DEBUG   HandlerThread:119741 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-02-10 15:32:55,908 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_153254-4qf84e0h/files/wandb-summary.json
+2023-02-10 15:32:55,909 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_153254-4qf84e0h/files/requirements.txt
+2023-02-10 15:32:55,909 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_153254-4qf84e0h/files/conda-environment.yaml
+2023-02-10 15:32:56,861 DEBUG   HandlerThread:119741 [system_info.py:_save_conda():86] Saving conda packages done
+2023-02-10 15:32:56,863 INFO    HandlerThread:119741 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-10 15:32:56,876 DEBUG   SenderThread:119741 [sender.py:send():334] send: files
+2023-02-10 15:32:56,876 INFO    SenderThread:119741 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-02-10 15:32:56,885 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-10 15:32:56,887 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: stop_status
+2023-02-10 15:32:56,909 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/conda-environment.yaml
+2023-02-10 15:32:56,909 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_153254-4qf84e0h/files/wandb-metadata.json
+2023-02-10 15:32:57,176 DEBUG   SenderThread:119741 [sender.py:send():334] send: telemetry
+2023-02-10 15:32:57,177 DEBUG   SenderThread:119741 [sender.py:send():334] send: config
+2023-02-10 15:32:57,181 DEBUG   SenderThread:119741 [sender.py:send():334] send: telemetry
+2023-02-10 15:32:57,646 INFO    Thread-16 :119741 [upload_job.py:push():143] Uploaded file /tmp/tmpdufy1zxcwandb/6icu1ang-wandb-metadata.json
+2023-02-10 15:32:57,910 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:32:59,910 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:00,077 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:33:01,911 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:05,368 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:33:05,913 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:07,914 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:09,915 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:10,684 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:33:11,881 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:33:11,881 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:33:11,916 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:13,917 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:15,918 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:16,432 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:33:16,882 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:33:17,919 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:19,920 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:21,883 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:33:21,921 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:22,136 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:33:23,922 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:25,923 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:26,885 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:33:27,889 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:33:27,924 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:28,925 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/config.yaml
+2023-02-10 15:33:29,925 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:31,886 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:33:31,926 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:33,614 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:33:33,927 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:35,929 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:36,887 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:33:37,930 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:39,368 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:33:39,931 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:41,888 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:33:41,932 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:43,933 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:45,116 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:33:45,934 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:46,889 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:33:47,935 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:49,936 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:51,108 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:33:51,890 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:33:51,937 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:53,938 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:55,210 DEBUG   SystemMonitor:119741 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-10 15:33:55,213 DEBUG   SenderThread:119741 [sender.py:send():334] send: stats
+2023-02-10 15:33:55,939 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:56,214 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:33:56,891 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:33:57,940 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:33:59,941 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:01,719 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:34:01,893 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:01,942 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:03,943 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:05,944 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:06,894 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:07,655 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:34:07,945 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:09,946 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:11,895 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:11,947 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:12,698 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:34:13,948 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:15,949 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:16,896 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:17,950 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:18,228 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:34:19,951 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:21,897 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:21,952 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:23,436 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:34:23,953 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:25,214 DEBUG   SenderThread:119741 [sender.py:send():334] send: stats
+2023-02-10 15:34:25,954 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:26,898 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:27,955 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:28,858 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:34:29,956 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:31,899 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:31,957 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:33,958 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:34,774 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:34:35,959 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:36,900 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:37,960 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:39,961 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:40,557 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:34:41,901 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:41,962 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:43,963 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:45,964 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:46,321 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:34:46,903 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:47,965 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:49,966 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:51,904 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:51,967 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:52,216 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:34:53,968 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:55,216 DEBUG   SenderThread:119741 [sender.py:send():334] send: stats
+2023-02-10 15:34:55,969 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:56,905 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:34:57,970 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:34:58,029 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:34:59,971 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:01,906 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:01,972 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:03,973 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:04,012 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:35:05,974 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:06,907 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:07,975 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:09,970 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:35:09,976 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:11,908 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:11,977 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:13,978 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:15,762 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:35:15,979 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:16,909 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:17,980 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:19,981 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:21,626 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:35:21,911 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:21,982 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:23,983 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:25,218 DEBUG   SenderThread:119741 [sender.py:send():334] send: stats
+2023-02-10 15:35:25,984 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:26,912 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:27,400 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:35:27,985 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:29,986 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:31,913 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:31,987 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:33,220 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:35:33,988 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:35,989 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:36,914 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:37,990 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:39,027 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:35:39,991 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:41,915 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:41,992 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:43,993 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:44,835 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:35:45,994 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:46,916 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:47,995 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:49,996 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:50,692 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:35:51,917 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:51,997 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:53,998 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:55,219 DEBUG   SenderThread:119741 [sender.py:send():334] send: stats
+2023-02-10 15:35:55,999 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:35:56,548 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:35:56,918 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:35:58,000 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:00,001 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:01,919 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:02,002 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:02,405 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:36:04,003 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:06,003 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:06,921 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:08,004 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:08,193 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:36:10,005 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:11,922 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:12,006 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:14,007 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:14,026 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:36:16,008 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:16,923 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:18,009 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:19,831 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:36:20,011 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:21,925 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:22,012 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:24,013 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:25,221 DEBUG   SenderThread:119741 [sender.py:send():334] send: stats
+2023-02-10 15:36:25,222 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:36:26,014 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:26,926 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:28,014 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:30,015 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:30,416 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:36:31,927 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:32,016 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:34,017 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:35,757 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:36:36,018 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:36,928 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:38,019 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:40,020 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:41,558 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:36:41,930 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:42,021 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:44,023 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:46,024 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:46,931 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:47,328 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:36:48,025 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:50,026 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:51,932 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:52,027 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:53,180 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:36:54,028 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:55,223 DEBUG   SenderThread:119741 [sender.py:send():334] send: stats
+2023-02-10 15:36:56,029 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:56,933 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:36:58,030 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:36:59,134 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:37:00,031 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:01,934 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:37:02,033 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:04,034 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:04,938 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:37:06,035 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:06,935 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:37:08,036 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:10,037 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:10,773 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:37:11,937 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:37:12,038 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:14,039 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:16,040 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:16,594 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:37:16,938 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:37:18,041 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:20,042 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:21,844 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:37:21,939 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-10 15:37:21,947 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-10 15:37:21,967 DEBUG   SenderThread:119741 [sender.py:send():334] send: telemetry
+2023-02-10 15:37:21,969 DEBUG   SenderThread:119741 [sender.py:send():334] send: exit
+2023-02-10 15:37:21,969 INFO    SenderThread:119741 [sender.py:send_exit():557] handling exit code: 0
+2023-02-10 15:37:21,969 INFO    SenderThread:119741 [sender.py:send_exit():559] handling runtime: 266
+2023-02-10 15:37:21,970 INFO    SenderThread:119741 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-10 15:37:21,970 INFO    SenderThread:119741 [sender.py:send_exit():565] send defer
+2023-02-10 15:37:21,970 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:21,971 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 0
+2023-02-10 15:37:21,971 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:21,971 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 0
+2023-02-10 15:37:21,971 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 1
+2023-02-10 15:37:21,971 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:21,972 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 1
+2023-02-10 15:37:21,972 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:21,972 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 1
+2023-02-10 15:37:21,972 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 2
+2023-02-10 15:37:21,972 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:21,972 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 2
+2023-02-10 15:37:21,972 INFO    HandlerThread:119741 [system_monitor.py:finish():161] Stopping system monitor
+2023-02-10 15:37:21,974 DEBUG   SystemMonitor:119741 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-02-10 15:37:21,974 DEBUG   SystemMonitor:119741 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-02-10 15:37:21,977 INFO    HandlerThread:119741 [interfaces.py:finish():175] Joined cpu
+2023-02-10 15:37:21,977 INFO    HandlerThread:119741 [interfaces.py:finish():175] Joined disk
+2023-02-10 15:37:22,043 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:22,044 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/wandb-summary.json
+2023-02-10 15:37:22,068 INFO    HandlerThread:119741 [interfaces.py:finish():175] Joined gpu
+2023-02-10 15:37:22,069 INFO    HandlerThread:119741 [interfaces.py:finish():175] Joined memory
+2023-02-10 15:37:22,069 INFO    HandlerThread:119741 [interfaces.py:finish():175] Joined network
+2023-02-10 15:37:22,070 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:22,070 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 2
+2023-02-10 15:37:22,070 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 3
+2023-02-10 15:37:22,070 DEBUG   SenderThread:119741 [sender.py:send():334] send: stats
+2023-02-10 15:37:22,070 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:22,071 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 3
+2023-02-10 15:37:22,073 DEBUG   SenderThread:119741 [sender.py:send():334] send: history
+2023-02-10 15:37:22,073 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: summary_record
+2023-02-10 15:37:22,073 INFO    SenderThread:119741 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-10 15:37:22,073 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:22,073 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 3
+2023-02-10 15:37:22,073 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 4
+2023-02-10 15:37:22,074 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:22,074 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 4
+2023-02-10 15:37:22,074 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:22,074 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 4
+2023-02-10 15:37:22,074 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 5
+2023-02-10 15:37:22,074 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:22,074 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 5
+2023-02-10 15:37:22,075 DEBUG   SenderThread:119741 [sender.py:send():334] send: summary
+2023-02-10 15:37:22,075 INFO    SenderThread:119741 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-10 15:37:22,075 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:22,075 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 5
+2023-02-10 15:37:22,076 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 6
+2023-02-10 15:37:22,076 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:22,076 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 6
+2023-02-10 15:37:22,076 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:22,076 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 6
+2023-02-10 15:37:22,079 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: status_report
+2023-02-10 15:37:22,419 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 7
+2023-02-10 15:37:22,419 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:22,419 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 7
+2023-02-10 15:37:22,420 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:22,420 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 7
+2023-02-10 15:37:22,970 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-10 15:37:23,044 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/config.yaml
+2023-02-10 15:37:23,045 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/wandb-summary.json
+2023-02-10 15:37:23,615 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 8
+2023-02-10 15:37:23,616 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: poll_exit
+2023-02-10 15:37:23,616 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:23,617 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 8
+2023-02-10 15:37:23,618 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:23,618 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 8
+2023-02-10 15:37:23,618 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 9
+2023-02-10 15:37:23,619 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:23,619 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 9
+2023-02-10 15:37:23,620 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:23,620 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 9
+2023-02-10 15:37:23,620 INFO    SenderThread:119741 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-02-10 15:37:23,971 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-10 15:37:24,045 INFO    Thread-13 :119741 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:24,046 INFO    SenderThread:119741 [dir_watcher.py:finish():392] scan: ./wandb/run-20230210_153254-4qf84e0h/files
+2023-02-10 15:37:24,046 INFO    SenderThread:119741 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_153254-4qf84e0h/files/conda-environment.yaml conda-environment.yaml
+2023-02-10 15:37:24,046 INFO    SenderThread:119741 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_153254-4qf84e0h/files/output.log output.log
+2023-02-10 15:37:24,047 INFO    SenderThread:119741 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_153254-4qf84e0h/files/wandb-metadata.json wandb-metadata.json
+2023-02-10 15:37:24,047 INFO    SenderThread:119741 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_153254-4qf84e0h/files/config.yaml config.yaml
+2023-02-10 15:37:24,059 INFO    SenderThread:119741 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_153254-4qf84e0h/files/wandb-summary.json wandb-summary.json
+2023-02-10 15:37:24,066 INFO    SenderThread:119741 [dir_watcher.py:finish():406] scan save: ./wandb/run-20230210_153254-4qf84e0h/files/requirements.txt requirements.txt
+2023-02-10 15:37:24,072 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 10
+2023-02-10 15:37:24,073 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: poll_exit
+2023-02-10 15:37:24,073 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:24,080 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 10
+2023-02-10 15:37:24,081 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:24,081 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 10
+2023-02-10 15:37:24,081 INFO    SenderThread:119741 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-10 15:37:24,826 INFO    Thread-17 :119741 [upload_job.py:push():143] Uploaded file ./wandb/run-20230210_153254-4qf84e0h/files/conda-environment.yaml
+2023-02-10 15:37:24,830 INFO    Thread-21 :119741 [upload_job.py:push():143] Uploaded file ./wandb/run-20230210_153254-4qf84e0h/files/requirements.txt
+2023-02-10 15:37:24,834 INFO    Thread-19 :119741 [upload_job.py:push():143] Uploaded file ./wandb/run-20230210_153254-4qf84e0h/files/config.yaml
+2023-02-10 15:37:24,848 INFO    Thread-18 :119741 [upload_job.py:push():143] Uploaded file ./wandb/run-20230210_153254-4qf84e0h/files/output.log
+2023-02-10 15:37:24,851 INFO    Thread-20 :119741 [upload_job.py:push():143] Uploaded file ./wandb/run-20230210_153254-4qf84e0h/files/wandb-summary.json
+2023-02-10 15:37:24,971 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-10 15:37:24,972 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: poll_exit
+2023-02-10 15:37:25,052 INFO    Thread-12 :119741 [sender.py:transition_state():585] send defer: 11
+2023-02-10 15:37:25,053 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:25,053 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 11
+2023-02-10 15:37:25,054 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:25,054 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 11
+2023-02-10 15:37:25,054 INFO    SenderThread:119741 [file_pusher.py:join():165] waiting for file pusher
+2023-02-10 15:37:25,054 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 12
+2023-02-10 15:37:25,054 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:25,055 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 12
+2023-02-10 15:37:25,055 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:25,056 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 12
+2023-02-10 15:37:25,253 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 13
+2023-02-10 15:37:25,254 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:25,254 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 13
+2023-02-10 15:37:25,255 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:25,255 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 13
+2023-02-10 15:37:25,255 INFO    SenderThread:119741 [sender.py:transition_state():585] send defer: 14
+2023-02-10 15:37:25,256 DEBUG   SenderThread:119741 [sender.py:send():334] send: final
+2023-02-10 15:37:25,257 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: defer
+2023-02-10 15:37:25,257 DEBUG   SenderThread:119741 [sender.py:send():334] send: footer
+2023-02-10 15:37:25,257 INFO    HandlerThread:119741 [handler.py:handle_request_defer():170] handle defer: 14
+2023-02-10 15:37:25,258 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: defer
+2023-02-10 15:37:25,258 INFO    SenderThread:119741 [sender.py:send_request_defer():581] handle sender defer: 14
+2023-02-10 15:37:25,260 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-10 15:37:25,260 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: server_info
+2023-02-10 15:37:25,261 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: get_summary
+2023-02-10 15:37:25,262 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: sampled_history
+2023-02-10 15:37:25,262 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: poll_exit
+2023-02-10 15:37:25,263 DEBUG   SenderThread:119741 [sender.py:send_request():361] send_request: server_info
+2023-02-10 15:37:25,817 DEBUG   HandlerThread:119741 [handler.py:handle_request():144] handle_request: shutdown
+2023-02-10 15:37:25,818 INFO    HandlerThread:119741 [handler.py:finish():841] shutting down handler
+2023-02-10 15:37:26,262 INFO    WriterThread:119741 [datastore.py:close():299] close: ./wandb/run-20230210_153254-4qf84e0h/run-4qf84e0h.wandb
+2023-02-10 15:37:26,816 INFO    SenderThread:119741 [sender.py:finish():1491] shutting down sender
+2023-02-10 15:37:26,816 INFO    SenderThread:119741 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-10 15:37:26,816 INFO    SenderThread:119741 [file_pusher.py:join():165] waiting for file pusher

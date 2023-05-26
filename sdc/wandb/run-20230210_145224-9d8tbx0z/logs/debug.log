@@ -1,0 +1,26 @@
+2023-02-10 14:52:24,980 INFO    MainThread:117085 [wandb_setup.py:_flush():68] Configure stats pid to 117085
+2023-02-10 14:52:24,980 INFO    MainThread:117085 [wandb_setup.py:_flush():68] Loading settings from /home/techtoker/.config/wandb/settings
+2023-02-10 14:52:24,980 INFO    MainThread:117085 [wandb_setup.py:_flush():68] Loading settings from /home/techtoker/projects/yandex_sdc/shifts-main/sdc/wandb/settings
+2023-02-10 14:52:24,980 INFO    MainThread:117085 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-10 14:52:24,980 INFO    MainThread:117085 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'run.py', 'program': '/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py'}
+2023-02-10 14:52:24,981 INFO    MainThread:117085 [wandb_init.py:_log_setup():478] Logging user logs to ./wandb/run-20230210_145224-9d8tbx0z/logs/debug.log
+2023-02-10 14:52:24,981 INFO    MainThread:117085 [wandb_init.py:_log_setup():479] Logging internal logs to ./wandb/run-20230210_145224-9d8tbx0z/logs/debug-internal.log
+2023-02-10 14:52:24,981 INFO    MainThread:117085 [wandb_init.py:init():518] calling init triggers
+2023-02-10 14:52:24,981 INFO    MainThread:117085 [wandb_init.py:init():521] wandb.init called with sweep_config: {}
+config: {}
+2023-02-10 14:52:24,982 INFO    MainThread:117085 [wandb_init.py:init():571] starting backend
+2023-02-10 14:52:24,982 INFO    MainThread:117085 [wandb_init.py:init():575] setting up manager
+2023-02-10 14:52:24,993 INFO    MainThread:117085 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-02-10 14:52:25,010 INFO    MainThread:117085 [wandb_init.py:init():582] backend started and connected
+2023-02-10 14:52:25,022 INFO    MainThread:117085 [wandb_init.py:init():670] updated telemetry
+2023-02-10 14:52:25,024 INFO    MainThread:117085 [wandb_init.py:init():710] communicating run to backend with 60.0 second timeout
+2023-02-10 14:52:25,690 INFO    MainThread:117085 [wandb_run.py:_on_init():2121] communicating current version
+2023-02-10 14:52:26,048 INFO    MainThread:117085 [wandb_run.py:_on_init():2125] got version response upgrade_message: "wandb version 0.13.10 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-02-10 14:52:26,048 INFO    MainThread:117085 [wandb_init.py:init():758] starting run threads in backend
+2023-02-10 14:52:27,875 INFO    MainThread:117085 [wandb_run.py:_console_start():2101] atexit reg
+2023-02-10 14:52:27,875 INFO    MainThread:117085 [wandb_run.py:_redirect():1959] redirect: SettingsConsole.WRAP_RAW
+2023-02-10 14:52:27,876 INFO    MainThread:117085 [wandb_run.py:_redirect():2024] Wrapping output streams.
+2023-02-10 14:52:27,877 INFO    MainThread:117085 [wandb_run.py:_redirect():2046] Redirects installed.
+2023-02-10 14:52:27,879 INFO    MainThread:117085 [wandb_init.py:init():798] run started, returning control to user process
+2023-02-10 14:52:27,885 INFO    MainThread:117085 [wandb_run.py:_config_callback():1249] config_cb None None {'wandb_project': 'ydx_prediction', 'dir_wandb': './', 'dir_tensorboard': 'tb', 'dir_data': '../../dataset/', 'dir_metrics': None, 'dir_metadata_cache': None, 'dir_checkpoint': '../../baseline-models/', 'verbose': False, 'tb_logging': False, 'np_seed': 42, 'torch_seed': 42, 'data_num_workers': 1, 'data_prefetch_factor': 2, 'data_dtype': 'float32', 'data_use_prerendered': True, 'exp_sweep': False, 'exp_name': '26gu9re6', 'exp_group': None, 'exp_use_cuda': True, 'exp_print_every_nth_forward': False, 'exp_lr': 0.0001, 'exp_num_lr_warmup_epochs': 1, 'exp_batch_size': 128, 'exp_num_epochs': 100, 'exp_image_downsize_hw': None, 'exp_checkpoint_frequency': 1, 'exp_checkpoint_validation_loss': 'moscow__development__ade', 'model_name': 'bc', 'model_prefix': 'Default', 'model_checkpoint_key': None, 'model_dim_hidden': 512, 'model_in_channels': 17, 'model_output_shape': [25, 2], 'model_weight_decay': 0.0, 'model_clip_gradients': True, 'bc_deterministic': False, 'bc_generation_mode': 'sampling', 'dim_scale_eps': 1e-07, 'rip_per_plan_algorithm': 'BCM', 'rip_per_scene_algorithm': 'BCM', 'rip_k': 3, 'rip_samples_per_model': 10, 'rip_num_preds': 5, 'rip_eval_subgroup': 'eval', 'rip_cache_all_preds': True, 'fbeta_threshold': 1.0, 'fbeta_beta': 1.0, 'debug_overfit_eval': False, 'debug_overfit_dev_data_only': False, 'debug_overfit_n_examples': 10, 'debug_collect_dataset_stats': True, 'debug_eval_mode': True, 'exp_device': 'cuda:0'}

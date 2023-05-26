@@ -1,0 +1,80 @@
+
+Using 4 workers in PyTorch dataloading.
+RIP kwargs:
+{'cache_all_preds': False,
+ 'device': 'cuda:0',
+ 'k': 3,
+ 'model_name': 'bc',
+ 'num_preds': 5,
+ 'per_plan_algorithm': 'BCM',
+ 'per_scene_algorithm': 'BCM',
+ 'samples_per_model': 10}
+Building RIP agent with backbone model bc, per-plan algorithm BCM, per-scene algorithm BCM, 3 ensemble members.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Loaded ensemble member 1 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-10-epoch-57.pt
+Loaded ensemble member 2 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-40-epoch-78.pt
+Loaded ensemble member 3 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-20-epoch-90.pt
+Successfully loaded all 3 ensemble members.
+Loading train dataset(s).
+Loading dataset moscow__train.
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+Built overfit dataset: used 10/388406 total scenes.
+Building MotionPredictionDataset with pre-filtered scene file paths.
+Loaded dataset moscow__train.
+Loading development dataset(s).
+Loading dataset moscow__development.
+Built overfit dataset: used 10/36605 total scenes.
+Building MotionPredictionDataset with pre-filtered scene file paths.
+Loaded dataset moscow__development.
+Loading dataset ood__development.
+Built overfit dataset: used 10/36605 total scenes.
+Building MotionPredictionDataset with pre-filtered scene file paths.
+Loaded dataset ood__development.
+Finished loading all datasets.
+defaultdict(<class 'dict'>,
+            {'development': {'moscow__development': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7fc506a40d30>,
+                             'ood__development': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7fc506943910>},
+             'train': {'moscow__train': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7fc5ed616280>}})
+Building dataloaders with num_workers=4, prefetch_factor=2.
+Running evaluation. Setting num_epochs to 1.
+  0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/1 [02:09<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py", line 88, in <module>
+    main()
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py", line 81, in main
+    train(c)
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/trainer.py", line 250, in train
+    loss_train_dict = evaluate_epoch(
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/trainer.py", line 178, in evaluate_epoch
+    loss_dict = evaluate_step(**evaluate_args)
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/oatomobile/torch/baselines/robust_imitative_planning.py", line 213, in evaluate_step_rip
+    if metadata_cache is not None:

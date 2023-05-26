@@ -1,0 +1,52 @@
+Using 4 workers in PyTorch dataloading.
+RIP kwargs:
+{'cache_all_preds': False,
+ 'device': 'cuda:0',
+ 'k': 3,
+ 'model_name': 'bc',
+ 'num_preds': 5,
+ 'per_plan_algorithm': 'BCM',
+ 'per_scene_algorithm': 'BCM',
+ 'samples_per_model': 10}
+Building RIP agent with backbone model bc, per-plan algorithm BCM, per-scene algorithm BCM, 3 ensemble members.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+Traceback (most recent call last):
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py", line 88, in <module>
+    main()
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/run.py", line 81, in main
+    train(c)
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/trainer.py", line 88, in train
+    model = load_rip_checkpoints(
+  File "/home/techtoker/projects/yandex_sdc/shifts-main/sdc/sdc/oatomobile/torch/baselines/robust_imitative_planning.py", line 235, in load_rip_checkpoints
+    raise ValueError(
+ValueError: Expected trained model checkpoints for RIP at checkpoint_dir ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm. The directory was created for your convenience.
+.

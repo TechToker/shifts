@@ -1,0 +1,196 @@
+Using 1 workers in PyTorch dataloading.
+RIP kwargs:
+{'cache_all_preds': True,
+ 'device': 'cuda:0',
+ 'k': 3,
+ 'model_name': 'bc',
+ 'num_preds': 5,
+ 'per_plan_algorithm': 'BCM',
+ 'per_scene_algorithm': 'BCM',
+ 'samples_per_model': 10}
+Building RIP agent with backbone model bc, per-plan algorithm BCM, per-scene algorithm BCM, 3 ensemble members.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Model kwargs:
+{'bc_deterministic': False,
+ 'device': 'cuda:0',
+ 'dim_hidden': 512,
+ 'generation_mode': 'sampling',
+ 'in_channels': 17,
+ 'output_shape': [25, 2]}
+BC Model: using Gaussian likelihood.
+BC Model: using generation mode sampling.
+Loaded ensemble member 1 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-10-epoch-57.pt
+Loaded ensemble member 2 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-40-epoch-78.pt
+Loaded ensemble member 3 from path ../../baseline-models//rip-bc-k_3-plan_bcm-scene_bcm/bs_model-seed-20-epoch-90.pt
+Successfully loaded all 3 ensemble members.
+Loading train dataset(s).
+Loading dataset moscow__train.
+388406/388406 scenes fit the filter criteria.
+Loaded dataset moscow__train.
+Loading development dataset(s).
+Loading dataset ood__development.
+5107/36605 scenes fit the filter criteria.
+Loaded dataset ood__development.
+Finished loading all datasets.
+defaultdict(<class 'dict'>,
+            {'development': {'ood__development': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7f0c1a6c1640>},
+             'train': {'moscow__train': <ysdc_dataset_api.dataset.torch_dataset.MotionPredictionDataset object at 0x7f0c186a2490>}})
+Building dataloaders with num_workers=1, prefetch_factor=2.
+Running evaluation. Setting num_epochs to 1.
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+Using cache found in ../../dataset//torch_hub/pytorch_vision_v0.9.0
+  0%|          | 0/1 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+176it [04:16,  1.45s/it]
+No previous results found at path ../../dataset//metadata_cache/rip-bc-k_3-plan_bcm-scene_bcm/request.tsv. Storing a new request_df.
+Successfully stored initial request_df at ../../dataset//metadata_cache/rip-bc-k_3-plan_bcm-scene_bcm/request.tsv.
+No previous results found at path ../../dataset//metadata_cache/rip-bc-k_3-plan_bcm-scene_bcm/scene.tsv. Storing a new scene_df.
+Successfully stored initial scene_df at ../../dataset//metadata_cache/rip-bc-k_3-plan_bcm-scene_bcm/scene.tsv.
+Val Losses: ,  1.29s/it]
+Val Losses:      | 0/1 [04:18<?, ?it/s]
+Val Losses: █████| 1/1 [04:18<00:00, 258.55s/it]
+: 100%|██████████| 1/1 [04:18<00:00, 258.55s/it]
